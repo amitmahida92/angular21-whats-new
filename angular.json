@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "149baa6e-5297-443f-9f45-14a2a9af4e3d"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -60,6 +61,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular21-whats-new/",
               "budgets": [
                 {
                   "type": "initial",
@@ -93,6 +95,9 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node api.js && ng serve",
+    "build": "node api.js && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular21-whats-new": "node dist/angular21-whats-new/server/server.mjs"
@@ -46,6 +46,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^3.0.3",
     "autoprefixer": "^10.4.23",
     "daisyui": "^5.5.14",
     "postcss": "^8.5.6",
